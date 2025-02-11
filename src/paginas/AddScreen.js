@@ -17,7 +17,6 @@ export function AddScreen() {
 
     useEffect(() => {
         requestPermissions();
-        fetchPosts(); // Llamada para obtener publicaciones al inicio
     }, []);
 
     const requestPermissions = async () => {
@@ -128,21 +127,6 @@ export function AddScreen() {
         } catch (error) {
             console.error('Error en savePost:', error);
             Alert.alert('Error', 'No se pudo guardar la publicación');
-        }
-    };
-
-    const fetchPosts = async () => {
-        try {
-            const response = await fetch(SERVER_URL);
-            if (!response.ok) {
-                const errorText = await response.text();
-                throw new Error(`Error al obtener publicaciones: ${errorText}`);
-            }
-            const data = await response.json();
-            console.log('Publicaciones obtenidas:', data);
-        } catch (error) {
-            console.error('Error al obtener publicaciones:', error);
-            Alert.alert('Error', 'No se pudieron obtener las publicaciones');
         }
     };
 
