@@ -38,7 +38,7 @@ Para instalar y ejecutar la aplicación, sigue estos pasos:
 
 4. Ejecuta la aplicación:
    ```bash
-   npm start
+   npx expo start
    ```
 
 ## Contribución
