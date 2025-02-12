@@ -57,7 +57,8 @@ Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE)
 ## Contacto
 
 Javier Ortega Reina
-javier.ortega@a.verunasevillsj.es
+
+javier.ortega@a.vedrunasevillasj.es
 
 ---
 
